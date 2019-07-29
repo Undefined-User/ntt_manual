@@ -4,6 +4,7 @@
 * [部署](install.md)
 * [Twitter 相关](twitter.md)
 * [群组 管理](group.md)
+* [RSS 订阅](rss.md)
 * [创建 BOT](bots.md)
 * [贴纸 制作](sticker.md)
 * [其他 杂项](other.md)
