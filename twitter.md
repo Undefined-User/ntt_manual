@@ -20,7 +20,7 @@ Twitter for iPhone : `/login iphone`
 
 Twitter Web App : `/login web_app`
 
-Twitter Web App : `/login web_client`
+Twitter Web Client : `/login web_client`
 
 Twitter for 猫 : `/login cat`
 
