@@ -30,6 +30,30 @@
 /rss_unsub_all
 ```
 
+### 导入订阅
+
+```text
+/rss_import
+```
+
+支持 opml_1.0 与 opml_2.0
+
+### 导出订阅
+
+```text
+/rss_export <频道>
+```
+
+### 设置 拉取间隔
+
+```text
+/rss_set_delay <分> <时> <天>
+```
+
+最少 15 分钟 ，最多 7 天。
+
+例子 : `/rss_set_delay @myRssChannel 40` ( RssHub 缓存时间为40分钟，设置频道 40分钟拉取一次。)
+
 ### 设置 输出格式
 
 RSS现在支持更多模式 :
@@ -97,6 +121,10 @@ RSS现在支持更多模式 :
 9.
 
 **来源**
+
+[文章标题](生成的Telegraph预览文章)
+
+10.
 
 [文章标题](生成的Telegraph预览文章)
 
