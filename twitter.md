@@ -4,12 +4,6 @@
 
 ### 普通认证
 
-{% hint style="warning" %}
-本人账号因为开发者后台误操作被锁定，默认API改为 "Twitter for 猫" ，自定义来源暂不可用，仅可用 /login twidere 使用 twidere 的开放API。
-{% endhint %}
-
-感谢 [@Overflow Cat](https://github.com/OverflowCat) ！
-
 ```text
 /login
 ```
@@ -24,7 +18,15 @@ Twitter for Android : `/login android`
 
 Twitter for iPhone : `/login iphone`
 
-Twitter Web App : `/login web`
+Twitter Web App : `/login web_app`
+
+Twitter Web App : `/login web_client`
+
+Twitter for 猫 : `/login cat`
+
+( 感谢 [@Overflow Cat](https://github.com/OverflowCat) 提供)
+
+Twidere for Android : `/login twidere`
 
 ### 自定义 API
 
