@@ -31,3 +31,40 @@
 {% hint style="success" %}
 支持指定目标地区 (省 市 乡)
 {% endhint %}
+
+## 发送链接按钮
+
+格式 : 
+
+```
+@NTT_X_BOT BUTTONS
+
+文本...
+
+[第一行第一个按钮](链接) [第二个按钮](链接)
+[第二行](链接)
+```
+
+## 发送HTML
+
+注意 : Telegram 仅支持 a、b、i、pre、code、em 六个标签
+
+格式 : 
+
+```text
+@NTT_X_BOT HTML 
+
+内容...
+```
+
+## 简中转满洲语
+
+注意 : 没有仔细研究、翻译接口为抓取的Cndic的接口、转换代码来自 [OverflowCat/ManchuBot](https://github.com/OverflowCat/ManchuBot/blob/master/Manchurize.gs)
+
+格式 : 
+
+```
+@NTT_X_BOT M
+
+内容...
+```
