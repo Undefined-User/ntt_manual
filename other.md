@@ -73,7 +73,7 @@
 
 下载库 与 它的所有依赖，支持 Maven Central 、JCenter、Sonatype
 
-曾经我使用 jar-download.com 但是它只支持 Maven Central 、需要等待很长时间并可能失败。
+曾经我使用 jar-download.com 但是它只支持 Maven Central 、需要等待很长时间并经常失败。
 
 ```
 /mvn <groupId> <artifactId>
