@@ -69,11 +69,15 @@ yum install -y git java java-devel
 ### 安装字体
 
 ```bash
-yum install -y unzip mkfontscale fontconfig
 
-cd /usr/share/fonts && mkdir noto && wget https://noto-website-2.storage.googleapis.com/pkgs/Noto-unhinted.zip && unzip Noto-unhinted.zip -d noto && rm -rf Noto-unhinted.zip
+yum groupinstall "fonts" -y
+
+unzip mkfontscale fontconfig
+
+cd /usr/share/fonts && mkdir noto-cjk && wget https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKsc-hinted.zip && unzip Noto-unhinted.zip -d noto-cjk && rm -rf Noto-unhinted.zip
 
 mkfontscale && mkfontdir && fc-cache -fv && source /etc/profile
+
 ```
 
 ### 安装 FFMpeg
@@ -134,6 +138,7 @@ rm -rf db data.zip
 | server_domain | 字符串 | WebHook 域名 | 你的域名 |
 | debug_mode | 布尔值 | 调试模式 | false |
 | bot_token | 字符串 | 登录秘钥 | 你的Token |
+| alias | 字符串数组 | 附加的BOT | [] |
 | admins | 整型数组 | 管理员ID列表 | [] |
 | log_channel | 字符串 | 日志频道 | 你的频道ID |
 | tep_channel | 字符串 | 推友消失推送频道 | 你的频道ID |
