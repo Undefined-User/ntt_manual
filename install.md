@@ -72,7 +72,7 @@ yum install -y git java java-devel
 
 yum groupinstall "fonts" -y
 
-unzip mkfontscale fontconfig
+yum install -y unzip mkfontscale fontconfig
 
 cd /usr/share/fonts && mkdir noto-cjk && wget https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKsc-hinted.zip && unzip Noto-unhinted.zip -d noto-cjk && rm -rf Noto-unhinted.zip
 

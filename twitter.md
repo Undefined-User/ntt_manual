@@ -2,77 +2,49 @@
 
 ## 认证账号
 
-### 普通认证
+### 打开账号管理
 
 ```text
-/login
+/twitter
 ```
 
-在Twitter授权页得到七位验证码，返回填写即可。
+### 登录
 
-### 自定义来源
+在管理菜单选择新认证，选择来源，在Twitter授权页得到七位验证码，返回填写即可。
 
-与普通认证的区别 : 使用NTT发送 / 回复推文时不显示来源为 NTT。
+### 选择来源
 
-Twitter for Android : `/login android`
+使用NTT发送 / 回复推文时显示自定义来源。
 
-Twitter for iPhone : `/login iphone`
+**NTT** : NTT
 
-Twitter Web App : `/login web_app`
+**Android** : Twitter for Android
 
-Twitter Web Client : `/login web_client`
+**iPhone** : Twitter for iPhone
 
-Twitter for 猫 : `/login cat`
+**Web App** (网页手机端) : Twitter Web App
 
-( 感谢 [@Overflow Cat](https://github.com/OverflowCat) 提供)
+**Web Client** (网页电脑端) : Twitter Web Client
 
-Twidere for Android : `/login twidere`
+### 认证账号
 
-### 自定义 API
+选择普通来源后，在打开的授权界面得到验证码，返回输入即可。
 
-```text
-/login <consumer_key> <consumer_secret>
-```
+选择第三方来源需要输入 Consumer Key / Consumer Key Secret
 
-使用自定义API登录 ，这需要在 [https://developer.twitter.com/](https://developer.twitter.com/) 创建。
-
-注意 : 虽然 API 权限为只读也能工作，但是不能使用某些功能。
-
-### 自定义 TOKEN
-
-```text
-/login <consumer_key> <consumer_secret> <access_token> <access_secret>
-```
-
-使用NTT导出的认证信息 或 Twitter开发者后台生成的Token 登录
+选择导入认证还需要输入 Access Token / Access Token Secret
 
 ### 导出认证
-
-```text
-/auth
-```
 
 可以用于其他程序或NTT高级登录
 
 ### 监听设置
 
-```text
-/track
-```
-
-关注者监听 : 当有新关注者和失去关注者时通知你，并提示该账号的风险 : 例如锁推、关注者低、没发过推文等等...
+关注者变化 : 当有新关注者和失去关注者时通知你，并提示该账号的风险 : 例如锁推、关注者低、没发过推文等等...
 
 账号更改监听 : 可以对关注者或关注中选择开启，当对方账号冻结、解冻、个人信息\(头像、名称等\) 改动时通知你。
 
-**对监听消息可以使用快速操作**
-
-隐藏账号更改 : 对BOT其他用户隐藏自己的账号更改。
-
-### 自动设置
-
-```text
-/auto
-```
+### 自动处理设置
 
 关注新关注者 : 当有一个用户关注你时，自动关注对方。
 
