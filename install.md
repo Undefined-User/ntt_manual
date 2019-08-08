@@ -16,6 +16,22 @@ git clone https://kurumi.io/HiedaNaKan/NTTools /usr/local/ntt
 cd /usr/local/ntt
 ```
 
+### HOSTS 用于网易云音乐下载
+
+```
+158.69.209.100 music.163.com
+14.215.100.225 m1.music.126.net
+14.215.100.225 m2.music.126.net
+14.215.100.225 m3.music.126.net
+14.215.100.225 m4.music.126.net
+14.215.100.225 m5.music.126.net
+14.215.100.225 m6.music.126.net
+14.215.100.225 m7.music.126.net
+14.215.100.225 m8.music.126.net
+14.215.100.225 m9.music.126.net
+14.215.100.225 m10.music.126.net
+```
+
 ### 安装 epel 源
 
 ```bash
